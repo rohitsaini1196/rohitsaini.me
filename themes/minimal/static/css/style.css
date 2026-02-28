@@ -456,6 +456,7 @@ a {
   color: #b0b0b0;
   margin-bottom: 1.1em;
   line-height: 1.65;
+  font-size: 0.95rem;
 }
 
 .page-content ul,
@@ -468,6 +469,7 @@ a {
 .page-content li {
   margin-bottom: 0.3em;
   line-height: 1.7;
+  font-size: 0.95rem;
 }
 
 /* --- Feed Page --- */
