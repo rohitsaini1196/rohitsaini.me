@@ -346,7 +346,7 @@ a {
 }
 
 .post-body p {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.1em;
 }
 
 .post-body h2 {
@@ -368,7 +368,7 @@ a {
 
 .post-body ul,
 .post-body ol {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.1em;
   padding-left: 1.5em;
 }
 
@@ -454,13 +454,13 @@ a {
 
 .page-content p {
   color: #b0b0b0;
-  margin-bottom: 1.5em;
-  line-height: 1.7;
+  margin-bottom: 1.1em;
+  line-height: 1.65;
 }
 
 .page-content ul,
 .page-content ol {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.1em;
   padding-left: 1.5em;
   color: #b0b0b0;
 }
