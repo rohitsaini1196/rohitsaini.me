@@ -3,44 +3,27 @@ title: "About"
 description: "About Rohit Saini — backend engineer, systems thinker, and builder."
 ---
 
-I'm Rohit — a backend engineer focused on distributed systems, search infrastructure, and streaming pipelines. Most of my time goes into designing systems that handle data at scale and making sure they stay up when things go wrong.
+Hi 👋, I'm Rohit! a backend engineer who loves to write code, now-a-days with the help of AI, ofcourse. I work on distributed systems, search infrastructure, and streaming pipelines. I spend my days building scalable data systems and making sure they don't catch fire at 3 AM. 🔥
 
-Day to day, I work across:
+**What I actually do:**
 
-- Distributed systems and service architecture
-- Search and ranking infrastructure (OpenSearch / Elasticsearch)
-- Stream processing and event-driven systems (Kafka)
-- Applied AI — moving models from notebooks into production with proper guardrails
-- Developer tooling and platform engineering
+- Design and debug distributed systems that need to behave under pressure
+- Build and tune search infrastructure that scales with data
+- Architect event-driven pipelines that move reliably and fail gracefully
+- Bridge the gap between experimental AI and production-ready systems
+- and everything in between
 
-What I've learned to care about over the years:
+**My philosophy (aka "lessons learned the hard way"):**
 
-- Clean boundaries between systems — get these wrong and everything downstream suffers
-- Code that's readable six months later, not just when it's fresh
-- Observability before optimization — you can't fix what you can't see
-- Performance backed by data, not instinct
-- Saying no to unnecessary complexity
+- **Boring tech wins.** Give me proven databases and simple queues over the latest hype cycle any day.
+- **Readability over cleverness.** Future you will thank present you.
+- **Observability first.** You can't fix what you can't see.
+- **Design for failure.** Because things _will_ break (usually on a Friday).
 
-I believe boring technology wins. The most reliable systems I've built used proven databases, simple queue-based architectures, and clear ownership boundaries. I'm skeptical of hype cycles — but genuinely curious about real breakthroughs, especially where AI meets backend systems in practical ways.
+When I'm not thinking about data flows, you can usually find me:
+🏔️ Escaping to the mountains for a literal change of perspective  
+🛠️ Tinkering with side projects to stress-test wild ideas
 
-A few principles I operate by:
+This site is my quiet corner of the internet. Just my thoughts, notes, and current obsessions.
 
-- Start with the data flow
-- Design for failure, not just the happy path
-- Prefer clarity over cleverness
-- Make systems observable before making them fast
-- Document _why_, not just _what_
-
-Outside of work:
-
-- I spend time in the mountains — altitude resets perspective
-- I build small side projects to stress-test ideas
-- I read about systems thinking and decision making
-- I value slow thinking and long-term consistency over noise
-
-This website is intentionally minimal.  
-No trackers. No analytics dashboards. No unnecessary JavaScript.
-
-Just writing, notes, and things I'm thinking about.
-
-You can find me on [GitHub](https://github.com/rohitsaini1196) or reach out via [email](mailto:sidsaini1196@gmail.com).
+Want to chat? Drop me an [email](mailto:sidsaini1196@gmail.com) or ping me on [Linkedin](https://www.linkedin.com/in/rohitsaini1196/).

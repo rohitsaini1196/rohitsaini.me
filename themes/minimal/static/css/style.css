@@ -507,6 +507,24 @@ a {
   margin: 0;
 }
 
+/* --- Markdown Links --- */
+.page-content a,
+.post-body a,
+.feed-content a {
+  color: #e5e5e5;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: #555;
+  transition: text-decoration-color 0.15s ease, color 0.15s ease;
+}
+
+.page-content a:hover,
+.post-body a:hover,
+.feed-content a:hover {
+  color: #fff;
+  text-decoration-color: #999;
+}
+
 /* --- Responsive --- */
 @media (max-width: 640px) {
   html {
