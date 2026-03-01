@@ -1,6 +1,7 @@
 {{ define "main" }}
 <section class="feed-page">
   <h1>Feed</h1>
+  <p class="feed-subtitle">Eventually consistent thoughts.</p>
 
   {{ $posts := where .Site.RegularPages "Section" "feed" }}
   {{ $total := len $posts }}
