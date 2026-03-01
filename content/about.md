@@ -11,7 +11,7 @@ Over time, I've found myself drawn to systems that need to behave under pressure
 
 **What I actually do:**
 
-- Design and debug distributed systems that handle millions of events a day — calmly
+- Design and debug distributed systems that handle millions of events
 - Build and productionize AI systems: RAG architectures, retrieval workflows, token optimization, evaluation loops, and make them reliable under real traffic
 - Architect event-driven pipelines that move predictably and fail gracefully (Kafka)
 - Build and tune search infrastructure that scales with data (OpenSearch)
