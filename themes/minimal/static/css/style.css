@@ -507,7 +507,11 @@ a {
 }
 
 .feed-content p {
-  margin: 0;
+  margin-bottom: 0.8em;
+}
+
+.feed-content p:last-child {
+  margin-bottom: 0;
 }
 
 .feed-divider {
