@@ -1,0 +1,22 @@
+{{ define "main" }}
+<section class="tools-page">
+  <h1>{{ .Title }}</h1>
+  {{ if .Params.subtitle }}
+  <p class="tools-subtitle">{{ .Params.subtitle }}</p>
+  {{ end }}
+
+  <div class="tools-grid">
+    {{ range .Params.tools }}
+    <a href="{{ .link }}" target="_blank" rel="noopener noreferrer" class="tool-card">
+      <div class="tool-name">{{ .name }}</div>
+      <div class="tool-description">{{ .description }}</div>
+      <span class="tool-link">Visit Tool →</span>
+    </a>
+    {{ end }}
+  </div>
+
+  <div class="post-back">
+    <a href="/">← Back to Home</a>
+  </div>
+</section>
+{{ end }}
