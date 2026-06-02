@@ -33,3 +33,5 @@ I build systems to be safe and predictable. Personally, I'm less interested in p
 This site is my quiet corner of the internet: notes, ideas, and things I'm learning or trying to understand better.
 
 If something here resonates, feel free to reach out.
+
+You can see my slightly outdated/boring resume [here](/resume/).
