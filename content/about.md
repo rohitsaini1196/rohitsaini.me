@@ -34,4 +34,4 @@ This site is my quiet corner of the internet: notes, ideas, and things I'm learn
 
 If something here resonates, feel free to reach out.
 
-You can see my slightly outdated/boring resume [here](/resume/).
+You can see my slightly outdated/boring resume [here](/resume.pdf).
