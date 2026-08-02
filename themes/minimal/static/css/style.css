@@ -246,9 +246,9 @@ a {
 
 .home-project {
   display: grid;
-  grid-template-columns: 200px 1fr auto;
+  grid-template-columns: 170px 1fr auto;
   align-items: start;
-  gap: 16px;
+  gap: 14px;
   padding: 10px 0;
   border-bottom: 1px solid #232323;
   transition: border-color 0.15s ease;
@@ -307,10 +307,16 @@ a {
 }
 
 .home-project-links {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 54px;
   gap: 14px;
   font-size: 0.78rem;
   white-space: nowrap;
+  justify-items: end;
+}
+
+.home-project-slot {
+  display: block;
 }
 
 @media (max-width: 600px) {

@@ -24,8 +24,12 @@
       </span>
       <span class="home-project-desc">{{ printf "%s." (index (split .description ". ") 0) }}</span>
       <span class="home-project-links">
-        {{ with .live }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="project-link is-domain">{{ strings.TrimPrefix "www." (urls.Parse .).Host }} ↗</a>{{ end }}
-        {{ with .github }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="project-link">Code ↗</a>{{ end }}
+        <span class="home-project-slot">
+          {{ with .live }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="project-link is-domain">{{ strings.TrimPrefix "www." (urls.Parse .).Host }} ↗</a>{{ end }}
+        </span>
+        <span class="home-project-slot">
+          {{ with .github }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="project-link">Code ↗</a>{{ end }}
+        </span>
       </span>
     </div>
     {{ end }}
