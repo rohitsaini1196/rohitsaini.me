@@ -18,10 +18,11 @@
     <div class="home-project">
       <span class="home-project-head">
         <span class="home-project-name">
-          {{ if .live }}<a href="{{ .live }}" target="_blank" rel="noopener noreferrer">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}
+          {{ $url := or .live .landing }}
+          {{ if $url }}<a href="{{ $url }}" target="_blank" rel="noopener noreferrer">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}
         </span>
         <span class="home-project-links">
-          {{ with .live }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="project-link is-domain">{{ strings.TrimPrefix "www." (urls.Parse .).Host }} ↗</a>{{ end }}
+          {{ with or .live .landing }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="project-link is-domain">{{ strings.TrimPrefix "www." (urls.Parse .).Host }} ↗</a>{{ end }}
           {{ with .github }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="project-link">Code ↗</a>{{ end }}
         </span>
       </span>

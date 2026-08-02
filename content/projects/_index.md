@@ -38,6 +38,7 @@ projects:
     status: "Live"
 
   - name: "ReelGen"
+    landing: "https://reelgen.rohitsaini.me/"
     description: "Turn a topic into a finished short-form video, captioned and colour-graded. AI storyboard, CLIP-matched stock footage, local-first, about a penny per reel. Grew out of a Reddit-narration generator, which is where most of the audio and pacing bugs got found."
     github: "https://github.com/rohitsaini1196/ReelGen"
     writings:
