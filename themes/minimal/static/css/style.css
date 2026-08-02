@@ -298,6 +298,14 @@ a {
   line-height: 1.5;
 }
 
+.project-link.is-domain {
+  color: #c8c8c8;
+}
+
+.project-link.is-domain:hover {
+  color: #fff;
+}
+
 .home-project-links {
   display: flex;
   gap: 14px;

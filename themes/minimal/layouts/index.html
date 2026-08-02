@@ -24,7 +24,7 @@
       </span>
       <span class="home-project-desc">{{ printf "%s." (index (split .description ". ") 0) }}</span>
       <span class="home-project-links">
-        {{ with .live }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="project-link">Live ↗</a>{{ end }}
+        {{ with .live }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="project-link is-domain">{{ strings.TrimPrefix "www." (urls.Parse .).Host }} ↗</a>{{ end }}
         {{ with .github }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="project-link">Code ↗</a>{{ end }}
       </span>
     </div>

@@ -5,7 +5,7 @@ description: "Things I've built, shipped, and experimented with."
 subtitle: "Systems, tools, and side projects — live software and open-source code."
 projects:
   - name: "Blindspot"
-    description: "Turns a public Instagram Reel into a claim-level report with citations, missing context, and explicit confidence. An evidence-retrieval system, not a truth detector: no truth score, and it is allowed to say a claim is not yet verifiable."
+    description: "Turns a public Instagram Reel into a claim-level report with citations. Each claim carries its missing context, observable framing, and explicit confidence. An evidence-retrieval system, not a truth detector: no truth score, and it is allowed to say a claim is not yet verifiable."
     live: "https://blindspot.buzz"
     writings:
       - label: "Part 1 →"
