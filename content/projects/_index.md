@@ -46,7 +46,7 @@ projects:
       - label: "Brainrot →"
         url: "/writing/brainrot-debugging/"
     tags: ["Python", "FFmpeg", "CLIP"]
-    status: "Active"
+    status: "Open Source"
 
   - name: "Claude Session Tracker"
     description: "Local dashboard for the Claude Code tabs you forget about — surfaces sessions waiting on you or gone silent."
