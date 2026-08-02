@@ -1036,10 +1036,16 @@ a {
 
 .project-link.is-domain {
   color: #c8c8c8;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  text-decoration-color: #4a4a4a;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
 }
 
 .project-link.is-domain:hover {
   color: #fff;
+  text-decoration-color: #8a8a8a;
 }
 
 .project-stack {
