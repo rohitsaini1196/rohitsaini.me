@@ -1034,6 +1034,14 @@ a {
   color: #e5e5e5;
 }
 
+.project-link.is-domain {
+  color: #c8c8c8;
+}
+
+.project-link.is-domain:hover {
+  color: #fff;
+}
+
 .project-stack {
   margin-left: auto;
   font-size: 0.75rem;

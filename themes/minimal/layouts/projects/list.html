@@ -18,7 +18,7 @@
       <p class="project-desc">{{ .description }}</p>
 
       <div class="project-meta">
-        {{ with .live }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="project-link">Live ↗</a>{{ end }}
+        {{ with .live }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="project-link is-domain">{{ strings.TrimPrefix "www." (urls.Parse .).Host }} ↗</a>{{ end }}
         {{ with .github }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="project-link">Code ↗</a>{{ end }}
         {{ range .writings }}<a href="{{ .url }}" class="project-link">{{ .label }}</a>{{ end }}
         {{ with .tags }}<span class="project-stack">{{ delimit . " · " }}</span>{{ end }}
