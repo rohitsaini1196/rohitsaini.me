@@ -18,7 +18,7 @@ projects:
     status: "Live"
 
   - name: "Sprout"
-    description: "A WhatsApp gardening companion for Indian home gardeners. Diagnoses plant problems from a photo or a Hindi voice note, and decides in Python whether it needs the model at all."
+    description: "Diagnoses plant problems over WhatsApp, and decides in Python whether it needs the model at all. Reads text, photos, or a Hindi voice note, and answers in the language it was asked in."
     live: "https://sprout.fortwinai.com"
     writings:
       - label: "Part 1 →"
