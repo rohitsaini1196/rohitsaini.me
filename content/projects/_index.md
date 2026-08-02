@@ -28,7 +28,7 @@ projects:
     status: "Live"
 
   - name: "Parakhi"
-    description: "Breaks an Indian product's MRP into what stays in India, what goes to tax, and what leaves. Every number carries a source tier, and none of them come from a model. No ground truth exists for FMCG cost structure, so the breakdown is computed from hand-written category templates."
+    description: "Breaks an Indian product's MRP into what stays in India, what's taxed, and what leaves. Every number carries a source tier, and none of them come from a model. No ground truth exists for FMCG cost structure, so the breakdown is computed from hand-written category templates."
     live: "https://parakhi.in"
     github: "https://github.com/rohitsaini1196/parakhi"
     writings:
