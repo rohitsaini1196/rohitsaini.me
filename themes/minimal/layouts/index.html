@@ -1,20 +1,51 @@
 {{ define "main" }}
 <section class="home-intro">
+  <p class="home-lede">
+    Backend engineer. I work on distributed systems, search infrastructure, and
+    streaming pipelines at Sense, mostly on the parts that have to stay up.
+  </p>
   <p class="home-description">
-    Thoughts on systems, AI, software, and life in general. Mostly things I want to remember, and don't mind the internet knowing.
+    This is where I write things down: systems, AI, software, and life in general.
+    Mostly things I want to remember, and don't mind the internet knowing.
   </p>
 </section>
 
-<section class="home-recent">
+<section class="home-section">
+  <h2>Selected Projects</h2>
+  {{ $projects := (site.GetPage "/projects").Params.projects }}
+  <div class="home-projects">
+    {{ range first 3 $projects }}
+    <div class="home-project">
+      <span class="home-project-head">
+        <span class="home-project-name">
+          {{ $url := or .live .landing }}
+          {{ if $url }}<a href="{{ $url }}" target="_blank" rel="noopener noreferrer">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}
+        </span>
+        <span class="home-project-links">
+          {{ with or .live .landing }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="project-link is-domain">{{ strings.TrimPrefix "www." (urls.Parse .).Host }} ↗</a>{{ end }}
+          {{ with .github }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="project-link">Code ↗</a>{{ end }}
+        </span>
+      </span>
+      <span class="home-project-body">
+        <span class="home-project-desc">{{ printf "%s." (index (split .description ". ") 0) }}</span>
+        <span class="home-project-stack">{{ delimit (first 3 .tags) " · " }}</span>
+      </span>
+    </div>
+    {{ end }}
+  </div>
+  <a href="/projects/" class="view-all">All projects →</a>
+</section>
+
+<section class="home-section">
   <h2>Recent Writing</h2>
   {{ $posts := (where .Site.RegularPages "Section" "writing") }}
   {{ range first 3 $posts }}
   <div class="post-card">
     <a href="{{ .Permalink }}" class="post-card-title">{{ .Title }}</a>
-    <p class="post-card-excerpt">{{ .Plain | truncate 200 }}  <a href="{{ .Permalink }}" class="read-more">Read more</a></p>
+    <p class="post-card-excerpt">{{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</p>
     <span class="post-meta">{{ .Date.Format "January 2, 2006" }} · {{ .Params.readTime }} min read</span>
   </div>
   {{ end }}
-  <a href="/writings/" class="view-all">All writings →</a>
+  <a href="/writings/" class="view-all">All writing →</a>
 </section>
 {{ end }}

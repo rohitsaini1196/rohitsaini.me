@@ -10,7 +10,8 @@
     <article class="project-item">
       <div class="project-head">
         <span class="project-name">
-          {{ if .live }}<a href="{{ .live }}" target="_blank" rel="noopener noreferrer">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}
+          {{ $url := or .live .landing }}
+          {{ if $url }}<a href="{{ $url }}" target="_blank" rel="noopener noreferrer">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}
         </span>
         {{ with .status }}<span class="project-status{{ if eq . "Live" }} is-live{{ end }}">{{ . }}</span>{{ end }}
       </div>
@@ -18,7 +19,7 @@
       <p class="project-desc">{{ .description }}</p>
 
       <div class="project-meta">
-        {{ with .live }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="project-link">Live ↗</a>{{ end }}
+        {{ with or .live .landing }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="project-link is-domain">{{ strings.TrimPrefix "www." (urls.Parse .).Host }} ↗</a>{{ end }}
         {{ with .github }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="project-link">Code ↗</a>{{ end }}
         {{ range .writings }}<a href="{{ .url }}" class="project-link">{{ .label }}</a>{{ end }}
         {{ with .tags }}<span class="project-stack">{{ delimit . " · " }}</span>{{ end }}
