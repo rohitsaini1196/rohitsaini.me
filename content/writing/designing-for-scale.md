@@ -3,6 +3,7 @@ title: "Designing for Scale"
 date: 2026-03-12
 readTime: 6
 draft: false
+tags: ["systems"]
 description: "Scale is mostly about clarity — of data flow, ownership, failure handling, and observability."
 ---
 

@@ -3,6 +3,7 @@ title: "Meta-Dev-CLI: Stop Clicking, Start Typing"
 date: 2026-04-02
 readTime: 2
 draft: false
+tags: ["build", "backend"]
 description: "Why I built a CLI for Meta's WhatsApp API to keep developers (and AI agents) in their flow state."
 ---
 

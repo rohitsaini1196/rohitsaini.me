@@ -3,6 +3,7 @@ title: "Brainrot: The Dumbest Video Format Taught Me the Most About Debugging"
 date: 2026-07-07
 readTime: 4
 draft: false
+tags: ["build", "debugging"]
 slug: "brainrot-debugging"
 description: "I automated those Reddit-story-over-Minecraft-parkour videos. The format is junk food. The bugs underneath were genuinely interesting."
 ---

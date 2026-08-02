@@ -1,0 +1,3 @@
+{{- $labels := dict "llm" "LLMs" "ai" "AI" "api" "API" "cli" "CLI" -}}
+{{- $key := lower . -}}
+{{- with index $labels $key }}{{ . }}{{ else }}{{ title $key }}{{ end -}}

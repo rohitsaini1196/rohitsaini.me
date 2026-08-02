@@ -3,6 +3,7 @@ title: "Live Kitchen Feeds: Transparency Without the Cloud Bill"
 date: 2026-03-31
 readTime: 3
 draft: false
+tags: ["build", "backend"]
 description: "Why food delivery apps need live streams, and how to build them cheaply with WebRTC."
 ---
 

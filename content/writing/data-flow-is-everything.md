@@ -3,6 +3,7 @@ title: "Data Flow Is Everything"
 date: 2025-11-22
 readTime: 6
 draft: false
+tags: ["systems"]
 description: "Every backend problem eventually becomes a data flow problem."
 ---
 

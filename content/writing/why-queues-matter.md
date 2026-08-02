@@ -3,6 +3,7 @@ title: "Why Queues Matter More Than You Think"
 date: 2026-01-05
 readTime: 5
 draft: false
+tags: ["systems", "backend"]
 description: "Queues are the unsung heroes of reliable systems. They absorb traffic spikes, decouple services, and turn fragile sync calls into resilient pipelines."
 ---
 

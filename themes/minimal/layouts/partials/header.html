@@ -7,8 +7,9 @@
     <div class="header-bottom">
       <nav class="site-nav">
         <a href="/about/" {{ if eq .RelPermalink "/about/" }}class="active"{{ end }}>About</a>
-        <a href="/writings/" {{ if or (eq .RelPermalink "/writings/") (eq .Section "writing") }}class="active"{{ end }}>Writings</a>
-        <a href="/feed/" {{ if eq .RelPermalink "/feed/" }}class="active"{{ end }}>Feed</a>
+        <a href="/writings/" {{ if or (eq .RelPermalink "/writings/") (eq .Section "writing") }}class="active"{{ end }}>Writing</a>
+        <a href="/log/" {{ if or (eq .RelPermalink "/log/") (eq .Section "log") }}class="active"{{ end }}>Log</a>
+        <a href="/projects/" {{ if or (eq .RelPermalink "/projects/") (eq .Section "projects") }}class="active"{{ end }}>Projects</a>
       </nav>
       <div class="site-links">
         <a href="{{ .Site.Params.github }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">

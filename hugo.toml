@@ -11,10 +11,11 @@ buildFuture = true
   description = "Backend engineer. Distributed systems, search infrastructure, streaming pipelines, and applied AI."
   author = "Rohit Saini"
   github = "https://github.com/rohitsaini1196"
-  email = "mailto:sidsaini1196@gmail.com"
+  email = "mailto:rohitsainihere@gmail.com"
   linkedin = "https://www.linkedin.com/in/rohitsaini1196/"
 
 [taxonomies]
+  tag = "tags"
 
 [outputs]
   home = ["HTML", "RSS"]

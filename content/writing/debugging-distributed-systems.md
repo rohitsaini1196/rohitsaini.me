@@ -3,6 +3,7 @@ title: "Debugging Distributed Systems"
 date: 2026-02-05
 readTime: 6
 draft: false
+tags: ["systems", "debugging"]
 description: "Debugging distributed systems is fundamentally different. You're reading timelines, not stack traces."
 ---
 

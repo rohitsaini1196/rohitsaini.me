@@ -1,6 +1,16 @@
 {{ define "main" }}
 <section class="writings-page">
-  <h1>Writings</h1>
+  <div class="writings-header">
+    <h1>Writing</h1>
+    <div class="tag-filter-list">
+      <a href="/writings/" class="tag-chip" data-tag="all">All</a>
+      {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+      <a href="/writings/?tag={{ $name | urlize }}" class="tag-chip" data-tag="{{ $name | urlize }}">
+        {{ partial "tag-label.html" $name }}<span class="tag-chip-count">{{ len $taxonomy }}</span>
+      </a>
+      {{ end }}
+    </div>
+  </div>
 
   {{ $posts := where .Site.RegularPages "Section" "writing" }}
   {{ $grouped := $posts.GroupByDate "2006" }}
@@ -8,13 +18,53 @@
   <div class="year-group">
     <h2 class="year-heading">{{ .Key }}</h2>
     {{ range .Pages }}
-    <a href="{{ .Permalink }}" class="post-item">
+    {{ $postTags := delimit (apply (default (slice) .Params.tags) "urlize" ".") " " }}
+    <a href="{{ .Permalink }}" class="post-item" data-tags="{{ $postTags }}">
       <span class="post-title">{{ .Title }}</span>
       {{ with .Description }}<span class="post-excerpt">{{ . }}</span>{{ end }}
-      <span class="post-meta">{{ .Date.Format "January 2" }} · {{ .Params.readTime }} min read</span>
+      <span class="post-meta">
+        {{ .Date.Format "January 2" }} · {{ .Params.readTime }} min read
+        {{ with .Params.tags }}
+        <span class="post-item-tags">{{ range . }}<span class="post-item-tag">{{ partial "tag-label.html" . }}</span>{{ end }}</span>
+        {{ end }}
+      </span>
     </a>
     {{ end }}
   </div>
   {{ end }}
+
+  <p class="filter-empty" hidden>No writing tagged with that yet.</p>
 </section>
+
+<script>
+  (function() {
+    const params = new URLSearchParams(window.location.search);
+    const selectedTag = params.get('tag') || 'all';
+
+    const posts = document.querySelectorAll('.post-item');
+    const yearGroups = document.querySelectorAll('.year-group');
+    const empty = document.querySelector('.filter-empty');
+
+    document.querySelectorAll('.tag-chip').forEach(function(link) {
+      link.classList.toggle('active', link.getAttribute('data-tag') === selectedTag);
+    });
+
+    if (selectedTag === 'all') return;
+
+    let anyVisible = false;
+    posts.forEach(function(post) {
+      const postTags = (post.getAttribute('data-tags') || '').split(' ');
+      const match = postTags.includes(selectedTag);
+      post.hidden = !match;
+      if (match) anyVisible = true;
+    });
+
+    yearGroups.forEach(function(group) {
+      const visible = group.querySelectorAll('.post-item:not([hidden])').length > 0;
+      group.hidden = !visible;
+    });
+
+    if (empty) empty.hidden = anyVisible;
+  })();
+</script>
 {{ end }}

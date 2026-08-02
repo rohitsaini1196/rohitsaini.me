@@ -1,0 +1,18 @@
+{{ define "main" }}
+<section class="writings-page">
+  <h1>Tags</h1>
+
+  <div class="tags-list">
+    {{ range .Data.Terms.Alphabetical }}
+    <a href="{{ .Page.Permalink }}" class="tag-list-item">
+      <span class="tag-name">#{{ .Page.Title }}</span>
+      <span class="tag-count">{{ .Count }}</span>
+    </a>
+    {{ end }}
+  </div>
+
+  <div class="post-back">
+    <a href="/writings/">← Back to Writing</a>
+  </div>
+</section>
+{{ end }}

@@ -3,6 +3,7 @@ title: "Boring Systems Win"
 date: 2025-12-10
 readTime: 4
 draft: false
+tags: ["systems"]
 description: "The most reliable systems are boring. They use proven databases, avoid unnecessary abstraction, and log properly."
 ---
 
