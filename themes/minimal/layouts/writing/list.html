@@ -23,9 +23,9 @@
       <span class="post-title">{{ .Title }}</span>
       {{ with .Description }}<span class="post-excerpt">{{ . }}</span>{{ end }}
       <span class="post-meta">
-        {{ .Date.Format "January 2" }} · {{ .Params.readTime }} min read
+        <span class="post-meta-date">{{ .Date.Format "January 2" }} · {{ .Params.readTime }} min read</span>
         {{ with .Params.tags }}
-        <span class="post-item-tags">{{ range . }}<span class="post-item-tag">{{ partial "tag-label.html" . }}</span>{{ end }}</span>
+        <span class="post-item-tags">{{ range $i, $t := . }}{{ if $i }}<span class="post-item-tag-sep">·</span>{{ end }}{{ partial "tag-label.html" $t }}{{ end }}</span>
         {{ end }}
       </span>
     </a>

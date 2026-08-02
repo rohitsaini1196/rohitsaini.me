@@ -4,6 +4,19 @@ url: "/projects/"
 description: "Things I've built, shipped, and experimented with."
 subtitle: "Systems, tools, and side projects — live software and open-source code."
 projects:
+  - name: "Blindspot"
+    description: "Turns a public Instagram Reel into a claim-level report with citations, missing context, and explicit confidence. An evidence-retrieval system, not a truth detector: no truth score, and it is allowed to say a claim is not yet verifiable."
+    live: "https://blindspot.buzz"
+    writings:
+      - label: "Part 1 →"
+        url: "/writing/blindspot-reading-the-video/"
+      - label: "Part 2 →"
+        url: "/writing/blindspot-extraction-and-evidence/"
+      - label: "Part 3 →"
+        url: "/writing/blindspot-running-it/"
+    tags: ["Next.js", "SQLite", "FFmpeg", "Whisper"]
+    status: "Live"
+
   - name: "ScamDB"
     description: "A searchable database of reported scam numbers and UPI IDs. The app took a weekend; scraping and cleaning the data took three months."
     live: "https://scamdb.in/"
@@ -15,7 +28,7 @@ projects:
     status: "Live"
 
   - name: "Parakhi"
-    description: "Breaks an Indian product's MRP into what stays in India, what goes to tax, and what leaves the country, with a source tier on every number. No ground truth exists for FMCG cost structure, so the numbers are computed deterministically from hand-written category templates instead of generated."
+    description: "Breaks an Indian product's MRP into what stays in India, what goes to tax, and what leaves. Every number carries a source tier, and none of them come from a model. No ground truth exists for FMCG cost structure, so the breakdown is computed from hand-written category templates."
     live: "https://parakhi.in"
     github: "https://github.com/rohitsaini1196/parakhi"
     writings:
@@ -25,7 +38,7 @@ projects:
     status: "Live"
 
   - name: "ReelGen"
-    description: "Turn a topic into a finished short-form video — AI storyboard, CLIP-matched stock footage, real color grading, animated captions. Local-first, about a penny per reel. Grew out of a Reddit-narration generator, which is where most of the audio and pacing bugs got found."
+    description: "Turn a topic into a finished short-form video, captioned and colour-graded. AI storyboard, CLIP-matched stock footage, local-first, about a penny per reel. Grew out of a Reddit-narration generator, which is where most of the audio and pacing bugs got found."
     github: "https://github.com/rohitsaini1196/ReelGen"
     writings:
       - label: "ReelGen →"
