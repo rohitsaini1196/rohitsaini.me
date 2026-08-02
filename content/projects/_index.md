@@ -17,6 +17,17 @@ projects:
     tags: ["Next.js", "SQLite", "FFmpeg", "Whisper"]
     status: "Live"
 
+  - name: "Sprout"
+    description: "A WhatsApp gardening companion for Indian home gardeners. Diagnoses plant problems from a photo or a Hindi voice note, and decides in Python whether it needs the model at all."
+    live: "https://sprout.fortwinai.com"
+    writings:
+      - label: "Part 1 →"
+        url: "/writing/sprout-decision-before-generation/"
+      - label: "Part 2 →"
+        url: "/writing/sprout-whatsapp-channel/"
+    tags: ["Python", "AWS Lambda", "DynamoDB", "Redis"]
+    status: "Live"
+
   - name: "ScamDB"
     description: "A searchable database of reported scam numbers and UPI IDs. The app took a weekend; scraping and cleaning the data took three months."
     live: "https://scamdb.in/"
@@ -25,16 +36,6 @@ projects:
       - label: "Writeup →"
         url: "/writing/scamdb/"
     tags: ["Next.js", "Supabase", "Search"]
-    status: "Live"
-
-  - name: "Parakhi"
-    description: "Breaks an Indian product's MRP into what stays in India, what's taxed, and what leaves. Every number carries a source tier, and none of them come from a model. No ground truth exists for FMCG cost structure, so the breakdown is computed from hand-written category templates."
-    live: "https://parakhi.in"
-    github: "https://github.com/rohitsaini1196/parakhi"
-    writings:
-      - label: "Writeup →"
-        url: "/writing/parakhi/"
-    tags: ["Next.js", "Postgres", "Prisma", "OpenAI"]
     status: "Live"
 
   - name: "ReelGen"
@@ -48,6 +49,16 @@ projects:
         url: "/writing/brainrot-debugging/"
     tags: ["Python", "FFmpeg", "CLIP"]
     status: "Open Source"
+
+  - name: "Parakhi"
+    description: "Breaks an Indian product's MRP into what stays in India, what's taxed, and what leaves. Every number carries a source tier, and none of them come from a model. No ground truth exists for FMCG cost structure, so the breakdown is computed from hand-written category templates."
+    live: "https://parakhi.in"
+    github: "https://github.com/rohitsaini1196/parakhi"
+    writings:
+      - label: "Writeup →"
+        url: "/writing/parakhi/"
+    tags: ["Next.js", "Postgres", "Prisma", "OpenAI"]
+    status: "Live"
 
   - name: "Claude Session Tracker"
     description: "Local dashboard for the Claude Code tabs you forget about — surfaces sessions waiting on you or gone silent."
