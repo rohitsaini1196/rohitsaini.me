@@ -3,6 +3,7 @@ title: "The Claude Code Tabs You Forget About"
 date: 2026-05-23
 readTime: 3
 draft: false
+tags: ["build"]
 slug: "claude-code-session-tracker"
 description: "I kept losing Claude Code sessions that were waiting on my reply. So I built a tiny local dashboard that surfaces them."
 ---

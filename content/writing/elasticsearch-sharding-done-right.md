@@ -3,6 +3,7 @@ title: "Elasticsearch Sharding, Done Right"
 date: 2024-11-10
 readTime: 7
 draft: false
+tags: ["backend", "systems"]
 description: "Sharding and index mappings are the foundation of a healthy Elasticsearch cluster. Get them wrong, and no amount of hardware will save you."
 ---
 

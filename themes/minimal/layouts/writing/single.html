@@ -2,14 +2,24 @@
 <article class="blog-post">
   <header class="post-header">
     <h1>{{ .Title }}</h1>
-    <div class="post-meta">{{ .Date.Format "January 2, 2006" }} · {{ .Params.readTime }} min read</div>
+    <div class="post-meta">
+      {{ .Date.Format "January 2, 2006" }} · {{ .Params.readTime }} min read
+    </div>
+    {{ with .Params.tags }}
+    <div class="post-tags">
+      {{ range . }}<a href="/writings/?tag={{ . | urlize }}" class="tag-chip">{{ partial "tag-label.html" . }}</a>{{ end }}
+    </div>
+    {{ end }}
   </header>
   <hr class="post-divider">
   <div class="post-body">
     {{ .Content }}
   </div>
   <div class="post-back">
-    <a href="/writings/">← Back to Writings</a>
+    <a href="/writings/">← Back to Writing</a>
+    {{ if in .Params.tags "build" }}
+    <a href="/projects/" class="post-back-builds">More builds →</a>
+    {{ end }}
   </div>
 </article>
 {{ end }}

@@ -3,6 +3,7 @@ title: "Event-Driven Systems Are Not Magic"
 date: 2026-02-20
 readTime: 7
 draft: false
+tags: ["systems", "backend"]
 description: "Event-driven systems are powerful, but they redistribute complexity rather than eliminating it."
 ---
 

@@ -1,0 +1,30 @@
+{{ define "main" }}
+<section class="writings-page">
+  <div class="writings-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.subtitle }}<p class="page-subtitle">{{ . }}</p>{{ end }}
+  </div>
+
+  <div class="project-list">
+    {{ range .Params.projects }}
+    <article class="project-item">
+      <div class="project-head">
+        <span class="project-name">
+          {{ if .live }}<a href="{{ .live }}" target="_blank" rel="noopener noreferrer">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}
+        </span>
+        {{ with .status }}<span class="project-status{{ if eq . "Live" }} is-live{{ end }}">{{ . }}</span>{{ end }}
+      </div>
+
+      <p class="project-desc">{{ .description }}</p>
+
+      <div class="project-meta">
+        {{ with .live }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="project-link">Live ↗</a>{{ end }}
+        {{ with .github }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="project-link">Code ↗</a>{{ end }}
+        {{ range .writings }}<a href="{{ .url }}" class="project-link">{{ .label }}</a>{{ end }}
+        {{ with .tags }}<span class="project-stack">{{ delimit . " · " }}</span>{{ end }}
+      </div>
+    </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

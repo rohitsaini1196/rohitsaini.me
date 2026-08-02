@@ -3,6 +3,7 @@ title: "ReelGen: Stop Scrolling Stock Footage, Start Shipping Reels"
 date: 2026-07-06
 readTime: 3
 draft: false
+tags: ["build", "llm"]
 slug: "reelgen"
 description: "I got tired of AI reels that look like AI reels. So I built a pipeline that actually cares about color, pacing, and footage quality."
 ---
