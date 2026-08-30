@@ -16,3 +16,7 @@ Thumbs.db
 # Raw assets
 PXL_*.jpg
 feed-only-blog-default-rtdb-export.json
+
+# Resume raw files
+/resume-raw/
+
